@@ -32,7 +32,7 @@ def agentic_daily_sales_pipeline():
     @task
     def run_deterministic_etl() -> str:
         # Adjust paths for your Airflow environment.
-        base_dir = Path("/workspaces/airflow-training-lab")
+        base_dir = Path("/opt/airflow")
         code_path = base_dir / "code" / "etl_pipeline.py"
         data_dir = base_dir / "data"
         out_dir = base_dir / "outputs"
